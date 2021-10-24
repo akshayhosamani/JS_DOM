@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+</head>
+<body>
+      <ul id="add-content">
+      </ul>
+      <p>Click below button to add content to list item</p>
+      <button id="btn">Click Here</button>
+
+<script>
+      document.getElementById('btn').addEventListener('click',function(){
+      var ul=document.getElementById('add-content');
+      var li=document.createElement('li');
+      var content=document.createTextNode("Tea");
+      li.append(content);
+      ul.append(li);
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+.form-valid{
+      border: 1px solid rgb(49, 145, 49)!important;
+      border-left: 15px solid rgb(49, 145, 49)!important;
+      box-shadow: 0 0 5px rgb(49, 145, 49)!important;
+}
+.form-invalid{
+      border: 1px solid red!important;
+      border-left: 15px red !important;
+      box-shadow: 0 0 5px red!important;
+}
+/* .valid-feedback{
+      font-size: 14px!important;
+      color: lightgreen!important;
+}
+.invalid-feedback{
+      font-size: 14px!important;
+      color: orangered!important;
+} */
+#username-feedback, #email-feedback,#password-feedback,#c-password-feedback{
+      font-size: 12px!important;
+      color: red;
+}
+.card-body-color{
+      background: #edf7fa;
+}

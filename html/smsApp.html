@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+      <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+      <nav class="navbar navbar-dark mb-3 bg-dark">
+            <a href="" class="navbar-brand">SMS App</a>
+      </nav>
+
+      <div class="container">
+            <div class="row">
+                  <div class="col-md-6">
+                        <div class="card bg-light">
+                              <div class="card-header">
+                                    SMS App
+                              </div>
+                              <div class="card-body">
+                                    <form action="">
+                                          <div class="form-group">
+                                                <textarea name=""  maxlength="100" id="textarea" class="form-control" rows="4" placeholder="Your text here"></textarea>
+                                          </div>
+                                          <div class="card-footer bg-light">
+                                                <h6 class="font-weight-light">Characters: <span id="length">0</span><span>/100</span></h6>
+                                                <button class="btn btn-primary m-auto" id="btn" onclick="fn()">Submit</button>
+                                          </div>
+                                    </form>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </div>
+
+      <script src="js/smsApp.js"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body> 
+</html>

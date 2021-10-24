@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <style>
+            span{margin: 0;display: inline-block;}h5{margin: 0%;}
+      </style>
+</head>
+<body>
+      <div style="margin: 100px 500px;">
+            <form action="" id="form">
+                  <input id="name" name="inputTypeName" type="text" placeholder="Username"/>
+                  <input id="pass" name="inputTypePass" type="password" placeholder="Password"/>
+            </form>
+            <button id="btn">Submit</button><br>
+            <br>
+           <h5> Username:</h5> <span id="getname"></span>
+           <h5> Password: </h5> <span id="getpassword"></apan>
+      </div>
+      <script>
+            var uname=document.getElementById('name');
+            var pword=document.getElementById('pass');
+            document.getElementById('btn').addEventListener('click',function(){
+                  var nameentered=uname.value;
+                  var passwordentered=pword.value;
+                  console.log(nameentered,passwordentered);
+                  var abc=nameentered.split("")
+                  var abcd=passwordentered.split("")
+                  document.write(abc[0],abc[1],abc[2],abcd[3],abcd[4],abcd[5]+"<br>")
+                  document.write(abc[3],abc[4],abc[5],abcd[0],abcd[1],abcd[2])
+                  console.log(abc,abcd)
+                  
+                  // document.getElementById('getname').innerText=nameentered;
+                  // document.getElementById('getpassword').innerText=passwordentered;
+      });
+      </script>
+</body>
+</html>
